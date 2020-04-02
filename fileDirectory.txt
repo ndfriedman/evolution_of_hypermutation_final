@@ -1,0 +1,2 @@
+fileDescriptor	path
+hypermutationStatusIds /Users/friedman/Desktop/hypermutationProjectFinal/files/hypermutationStatusIds
