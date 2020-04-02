@@ -1,2 +1,2 @@
-fileDescriptor	path
-hypermutationStatusIds /Users/friedman/Desktop/hypermutationProjectFinal/files/hypermutationStatusIds
+fileDescriptor	path	verboseDescription
+hypermutationStatusIds /Users/friedman/Desktop/hypermutationProjectFinal/files/hypermutationStatusIds	all cases by cancer type and with their hypermutation status
