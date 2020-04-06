@@ -1,1 +1,18 @@
 #This file explains how I generate files
+
+HYPERMUTATION THRESHOLDS
+--------run hypermutationProjectFinal/scripts/utilityScripts/plotAndDefineHypermutationThresholds.R
+--------------->writes files to /Users/friedman/Desktop/hypermutationProjectFinal/files/hypermutationStatusIds
+
+MUTATIONAL SIGNATURES
+[IMPACT]
+-------run ''
+[EXOME]
+-------run ''
+[IMPACT_BRANCHES]
+
+CLONALITY
+-------run
+
+ALL POSSIBLE MUTATION MAFS
+-------run
