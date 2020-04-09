@@ -1,4 +1,5 @@
 #This file explains how I generate files
+#values in ** are the keys from fileDirectory.txt
 
 HYPERMUTATION THRESHOLDS
 --------run hypermutationProjectFinal/scripts/utilityScripts/plotAndDefineHypermutationThresholds.R
@@ -16,3 +17,13 @@ CLONALITY
 
 ALL POSSIBLE MUTATION MAFS
 -------run
+
+MAF ANNOTATIONS
+[MUTATION ATTRIBUTION]
+-------run python *SCRIPT_ATTRIBUTE_MUTATIONS_TO_SIGNATURES* *SIGNATURE_SPECTRUM* .1 10 *IMPACT_SIGNATURE_DECOMPOSITIONS* *OUTPUT_FILE_TODO_CHANGE* agingIsAlwaysPresent doSmokingCorrection
+
+[CLONALITY]
+-------on the cluster run myUtils/create_cncf_or_rdata_file_list.py  
+-----------then run python prepare_maf_anno_commands.py ----> to prepare files and calls for maf anno #note we need to run annotate maf multiple separate times because it cant handle huge requests.  We annotated the unannotated maf
+-----------then on the cluster run /juno/work/taylorlab/friedman/myUtils/runMafAnno.sh ----> which calls myUtils/runAnnotateMaf.R
+-----------then run python concat_maf_util.py /juno/work/taylorlab/friedman/myAdjustedDataFiles/mafAnnoRuns/annotatedMafs /juno/work/taylorlab/friedman/myAdjustedDataFiles/mafAnnoRuns/combined_cncf_annotated.maf ----> which creates a large combined file with cncf annotations
