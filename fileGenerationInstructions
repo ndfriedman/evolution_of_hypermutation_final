@@ -27,3 +27,5 @@ MAF ANNOTATIONS
 -----------then run python prepare_maf_anno_commands.py ----> to prepare files and calls for maf anno #note we need to run annotate maf multiple separate times because it cant handle huge requests.  We annotated the unannotated maf
 -----------then on the cluster run /juno/work/taylorlab/friedman/myUtils/runMafAnno.sh ----> which calls myUtils/runAnnotateMaf.R
 -----------then run python concat_maf_util.py /juno/work/taylorlab/friedman/myAdjustedDataFiles/mafAnnoRuns/annotatedMafs /juno/work/taylorlab/friedman/myAdjustedDataFiles/mafAnnoRuns/combined_cncf_annotated.maf ----> which creates a large combined file with cncf annotations
+-----------then adjust clonality calls in hypermutated cancers with: python adjust_clonality_calls_for_hypermutators.py ../../files/mafs/combined_cncf_annotated.maf ../../files/mafs/combined_cncf_hypermutants_adjusted_annotated.maf IMPACT (heavy takes >1hr to run)
+-----------then add annotations with /scripts/utilityScripts/add_annotations_to_maf.py
