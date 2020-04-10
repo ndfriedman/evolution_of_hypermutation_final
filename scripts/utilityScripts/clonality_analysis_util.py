@@ -7,15 +7,13 @@ import numpy as np
 import math
 
 from collections import Counter
-sys.path.append('/ifs/work/taylorlab/friedman/')
+sys.path.append('/Users/friedman/Desktop/hypermutationProjectFinal/scripts/utilityScripts')
 
-pathPrefix = ''
-if os.getcwd() == '/Users/friedman/Desktop/mnt':
-	pathPrefix = '/Users/friedman/Desktop/mnt'
-
-import imp
-analysis_utils = imp.load_source('analysis_utils', '/Users/friedman/Desktop/mnt/juno/work/taylorlab/friedman/myUtils/analysis_utils.py')
-maf_analysis_utils = imp.load_source('maf_analysis_utils', '/Users/friedman/Desktop/mnt/juno/work/taylorlab/friedman/myUtils/analysis_utils.py')
+import analysis_utils
+import maf_analysis_utils
+#import imp
+#analysis_utils = imp.load_source('analysis_utils', '/Users/friedman/Desktop/mnt/juno/work/taylorlab/friedman/myUtils/analysis_utils.py')
+#maf_analysis_utils = imp.load_source('maf_analysis_utils', '/Users/friedman/Desktop/mnt/juno/work/taylorlab/friedman/myUtils/analysis_utils.py')
 
 def create_facets_dict_key(row):
 	return row['Tumor_Sample_Barcode'] + '_' + row['idCol']
