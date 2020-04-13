@@ -29,3 +29,10 @@ MAF ANNOTATIONS
 -----------then run python concat_maf_util.py /juno/work/taylorlab/friedman/myAdjustedDataFiles/mafAnnoRuns/annotatedMafs /juno/work/taylorlab/friedman/myAdjustedDataFiles/mafAnnoRuns/combined_cncf_annotated.maf ----> which creates a large combined file with cncf annotations
 -----------then adjust clonality calls in hypermutated cancers with: python adjust_clonality_calls_for_hypermutators.py ../../files/mafs/combined_cncf_annotated.maf ../../files/mafs/combined_cncf_hypermutants_adjusted_annotated.maf IMPACT (heavy takes >1hr to run)
 -----------then add annotations with /scripts/utilityScripts/add_annotations_to_maf.py
+
+[DNDS]
+-----------run first part of make_dnds_figures_2a_2c to prepare data for DNDS
+-----------run scripts/utilityScripts/
+
+[PHASING]
+-----------data generated through Alex G's pipeline, originally at: /home/ang46/lab/projects/compound_mutations/data/processed_data/data_mutations_phased_all.txt
